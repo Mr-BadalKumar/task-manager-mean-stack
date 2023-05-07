@@ -11,7 +11,7 @@ COPY /api/package*.json ./
 RUN npm install
 
 # Copy the remaining application code to the working directory
-COPY . .
+COPY /api/. .
 
 # Set the command to run when the container starts
 CMD ["node", "app.js"]
