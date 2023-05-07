@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Set the command to run when the container starts
-CMD ["npm", "app.js"]
+CMD ["node", "app.js"]
