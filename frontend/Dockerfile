@@ -11,6 +11,7 @@ COPY frontend/package*.json ./
 RUN npm install
 
 # Copy the rest of the application code to the working directory
+COPY frontend .
 
 # Build the application
 RUN npm run build --prod
