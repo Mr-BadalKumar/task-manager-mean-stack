@@ -5,7 +5,7 @@ FROM node:10.15-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY frontend /usr/local/app/
+COPY frontend/package*.json ./
 
 # Install dependencies
 RUN npm install
