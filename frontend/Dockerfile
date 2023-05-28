@@ -20,4 +20,5 @@ RUN npm run build --prod
 EXPOSE 4200
 
 # Start the Angular application
-CMD ["npm", "run", "start"]
+CMD ["ng", "serve --host 0.0.0.0"]
+#ng serve --host 0.0.0.0
