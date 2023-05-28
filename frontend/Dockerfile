@@ -9,7 +9,7 @@ COPY frontend/package*.json ./
 
 # Install dependencies
 RUN npm install
-
+RUN npm install -g @angular/cli
 # Copy the rest of the application code to the working directory
 COPY frontend .
 
@@ -18,7 +18,7 @@ RUN npm run build --prod
 
 # Expose port 80 for the Angular application
 EXPOSE 4200
-
-# Start the Angular application
-CMD ["ng", "serve --host 0.0.0.0"]
 #ng serve --host 0.0.0.0
+
+# Start the Angular development server
+CMD ng serve --host 0.0.0.0
