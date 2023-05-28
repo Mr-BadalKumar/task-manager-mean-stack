@@ -21,4 +21,4 @@ EXPOSE 4200
 #ng serve --host 0.0.0.0
 
 # Start the Angular development server
-CMD ng serve --host 0.0.0.0
+CMD npm run start --host 0.0.0.0
