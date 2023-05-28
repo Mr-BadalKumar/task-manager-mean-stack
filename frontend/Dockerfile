@@ -17,6 +17,7 @@ COPY frontend .
 RUN npm run build --prod
 
 # Expose port 80 for the Angular application
+EXPOSE 4200
 
 # Start the Angular application
 CMD ["npm", "run", "start"]
