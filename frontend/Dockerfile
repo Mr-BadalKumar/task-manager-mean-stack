@@ -9,7 +9,7 @@ COPY frontend/package*.json ./
 
 # Install dependencies
 RUN npm install
-RUN npm install -g @angular/cli
+
 # Copy the rest of the application code to the working directory
 COPY frontend .
 
