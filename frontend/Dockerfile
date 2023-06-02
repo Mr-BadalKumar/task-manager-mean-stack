@@ -18,4 +18,5 @@ RUN npm run build --prod
 
 
 # Start the Angular application
-CMD ["npm", "run", "start"]
+CMD npm start --host 0.0.0.0
+
