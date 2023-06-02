@@ -14,9 +14,10 @@ RUN npm install
 COPY frontend .
 
 # Build the application
-RUN npm run build --prod
+RUN npm run build
 
+
+EXPOSE 4200
 
 # Start the Angular application
-CMD npm start --host 0.0.0.0
-
+CMD npm start
