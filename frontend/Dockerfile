@@ -17,7 +17,6 @@ COPY frontend .
 RUN npm run build
 
 
-EXPOSE 4200
 
 # Start the Angular application
-CMD npm start
+CMD ["npm", "start"]
