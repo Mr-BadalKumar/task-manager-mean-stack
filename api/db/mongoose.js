@@ -12,7 +12,7 @@ mongoose.connect('mongodb://root:root@mean-db-mongodb.devtron-demo:27017/TaskMan
 
 // To prevent deprectation warnings (from MongoDB native driver)
 // mongoose.set('useCreateIndex', true);
-mongoose.set('useFindAndModify', false);
+// mongoose.set('useFindAndModify', false);
 
 
 module.exports = {
